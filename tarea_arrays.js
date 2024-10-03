@@ -78,14 +78,14 @@ const matrix = [
 // 6.1 Crea una función llamada `findMinMaxPages` que reciba un array de números (representando el número de páginas de libros).
 // La función debe devolver un array con dos posiciones: el índice del libro con menos páginas y el índice del libro con más páginas.
 function findMinMaxPages(books) {
-    if (pages.length === 0) {
+    if (libros.length === 0) {
         return [-1, -1];
     }
 
-    let min = Math.min(...pages);
-    let max = Math.max(...pages);
+    let min = Math.min(...libros);
+    let max = Math.max(...libros);
 
-    return [pages.indexOf(min), pages.indexOf(max)];
+    return [libros.indexOf(min), libros.indexOf(max)];
 }
 
 const libros = [350, 120, 540, 275, 390, 130, 670];
